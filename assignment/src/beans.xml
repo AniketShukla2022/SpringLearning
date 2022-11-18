@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <bean id = "missedcall" class = "com.spring.learning.assignment.MissedCallAlert"></bean>
+    <bean id = "dataservice" class = "com.spring.learning.assignment.DataService"></bean>
+    <bean id = "hellotunealert" class = "com.spring.learning.assignment.HelloTuneService"></bean>
+    <bean id = "airtel" class = "com.spring.learning.assignment.Airtel">
+    	<property name = "service" ref = "dataservice"></property>
+    </bean>
+    
+</beans>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+    <bean id = "student" class = "com.spring.learning.dependency.injection.Student">
+    	<constructor-arg name = "studentName" value = "Aniket Shukla"/>
+    	<constructor-arg name = "id" value = "2"/>
+    </bean>
+   
+   <bean id = "student1" class = "com.spring.learning.dependency.injection.Student">
+   		<constructor-arg name = "id" value = "5"/>
+   </bean>
+</beans>
+
