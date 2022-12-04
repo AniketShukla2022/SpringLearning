@@ -8,15 +8,24 @@
 </head>
 <body bgcolor="cyan">
 
+	<%! 
+		int coef = 3;
+		
+	%>
+	
 	<%
 		int i = Integer.parseInt(request.getParameter("num1"));
 		int j = Integer.parseInt(request.getParameter("num2"));
 		
 		int k = i+j;
 		
+		
 		out.println("Output: "+k);
+		out.println("this is inside scriptlet tag");
 	
 	%>
+	
+	Value of the variable in declarative tag is: <%= coef %>
 
 </body>
 </html>
