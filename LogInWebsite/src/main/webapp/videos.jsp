@@ -9,13 +9,15 @@
 <body>
 
 	<%
+	
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
 		if (session.getAttribute("username") == null) {
 			response.sendRedirect("Login.jsp");
 			
 		}
 	%>
 	
-	https://www.youtube.com/watch?v=cYc3FjhMMzI&list=PLsyeobzWxl7pUPF2xjjJiG4BKC9x_GY46&index=32
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/8-2Z6w8oRws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </body>
 </html>

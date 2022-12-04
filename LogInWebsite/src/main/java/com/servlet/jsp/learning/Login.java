@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 @WebServlet("/Login")
 public class Login extends HttpServlet{
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		
 		String uname = request.getParameter("uname");
 		String pass = request.getParameter("pass");
